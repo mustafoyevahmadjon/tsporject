@@ -9,7 +9,7 @@ type Props = {
 
 const Item: React.FC<Props> = ({ item, handleAddToCart }) => {
     return (
-        <Wrapper>
+        <Wrapper style={{height: "100%"}}>
             <img src={item.image} alt={item.title} />
             <div>
                 <h3>{item.title}</h3>
