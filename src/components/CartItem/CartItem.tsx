@@ -1,5 +1,5 @@
 import { cartItemType } from "../../App";
-import { Wrapper } from "../CartItem/CartItem.styles";
+import { Wrapper } from "./CartItem.styles";
 import Button from "@mui/material/Button";
 
 type Props = {
@@ -23,7 +23,9 @@ export const CartItem: React.FC<Props> = ({ item, addToCart, removeFromCart }) =
                     <Button disableElevation size={"small"} variant={"contained"} onClick={() => addToCart(item)}>+</Button>
                 </div>
             </div>
-                <img src={item.image} alt={item.title} />
+            <div className={"imgDiv"}>
+                <img style={{width: "200px", marginTop: "20px", height: "200px", objectFit: "cover"}} src={item.image} alt={item.title} />
+            </div>
         </Wrapper>
     )
 }

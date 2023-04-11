@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  font-family: 'Roboto', sans-serif;
     display:flex;
     justify-content:space-between;
     flex-direction: column;
